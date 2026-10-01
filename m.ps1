@@ -11,7 +11,7 @@ function Invoke-WebRev{
 .SYNOPSIS
     WebRev.
     PowerShell Function: Invoke-WebRev
-    Author: Hector de Armas (3v4Si0N)
+    Author: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     Required Dependencies: Powershell >= v3.0
     Optional Dependencies: None
